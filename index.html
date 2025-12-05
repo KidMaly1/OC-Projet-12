@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Sean</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>AR Dev 💻✈️</h1>
+    <div class="logo">Sean 💻✈️🏝️</div>
     <nav>
       <ul>
-        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#hero">Accueil</a></li>
         <li><a href="#about">À propos</a></li>
         <li><a href="#projects">Projets</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -21,68 +22,88 @@
   </header>
 
   <main>
-
-  <section id="accueil" class="hero">
-    <h2>Bonjour,<br> Je suis Andria, Front-end Developer 🌴</h2>
-    <p>Développeur passionné, créatif et prêt à embarquer pour de nouveux projets. À distance ou sur site</p>
+  <!-- Hero -->
+  <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Bonjour, je suis Sean 👨‍✈️</h1>
+        <p>Développeur Web passionné, créatif et sensible à l’expérience utilisateur.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn-secondary">Me contacter</a>
+        </div>
+      </div>
+      
   </section>
 
-  <section id="about" class="about-section">
-  <div class="about-text">
-    <h2>À propos</h2>
-    <p>J’ai toujours été attiré par l’informatique, sans savoir exactement dans quel domaine je pourrais évoluer ou m’épanouir...</p>
-    <p>Au fil de mes recherches, j’ai découvert le métier de Développeur Web Front-end...</p>
-    <p>Aujourd’hui, je me définis comme un développeur sensible à l’expérience utilisateur...</p>
-  </div>
-  <div class="about-tech">
-    <h3>Technologies maîtrisées</h3>
-    <div class="tech-logos">
-      <img src="/assets/image5.png" class="logo" alt="logo">
-      <img src="/assets/image6.png" class="logo" alt="logo">
-      <img src="/assets/image7.png" class="logo" alt="logo">
-      <img src="/assets/image8.png" class="logo" alt="logo">
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="about-text">
+      <h2>À propos</h2>
+      <p>J’ai toujours été attiré par l’informatique et le design, sans savoir exactement dans quel domaine je pourrais évoluer ou m’épanouir...</p>
+      <p>Au fil de mes recherches, j’ai découvert le métier de Développeur Web Front-end...</p>
+      <p>Aujourd’hui, je me définis comme un développeur sensible à l’expérience utilisateur...</p>
     </div>
-  </div>
+    <div class="about-pic">
+      <img src="assets/profile.JPG" class="profile-img" alt="profile picture">
+    </div>
+    
   </section>
 
-  <section id="projects">
+  <div class="tech">
+      <h2>Les Technologies que j'utilise</h2>
+      <div class="tech-logos">
+        <img src="assets/logo-html.png" alt="HTML">
+        <img src="assets/logo-css.png" alt="CSS">
+        <img src="assets/image7.png" alt="JavaScript">
+        <img src="assets/image8.png" alt="React">
+      </div>
+    </div>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
     <h2>Mes Projets</h2>
-    <div class="cards-container">
-      <div class="project-card">
-        <img src="/assets/image1.png" alt="kasa img" />
+    <div class="grid">
+      <article class="project-card">
+        <img src="assets/image1.png" alt="Projet 1">
         <h3>Kasa</h3>
-        <p>Application de location d'appartements.</p>
-        <div class="tags">
-            <span>React</span>
-            <span>Node.js</span>
-        </div>
-            <a href="#">Voir le projet</a>
-      </div>
-      <div class="project-card">
-        <img src="/assets/image3.png" alt="seo img" />
-        <h3>Kasa</h3>
-        <p>Portfolio d'une photographe.</p>
-        <div class="tags">
-            <span>WAVE</span>
-            <span>Google Lighthouse</span>
-        </div>
-            <a href="#">Voir le projet</a>
-      </div>
+        <p>Application de location d'appartements en région Parisienne.</p>
+        <a href="#">Voir le projet</a>
+      </article>
+      <article class="project-card">
+        <img src="assets/image3.png" alt="Projet 2">
+        <h3>Portfolio de Photographe</h3>
+        <p>Portfolio d'une Photographe à Bordeaux SEO.</p>
+        <a href="#">Voir le projet</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="path" class="path">
+    <div class="path-text">
+    <h2>Mon parcours</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  iste fugiat placeat, maxime fugit? Reiciendis quas nostrum ut porro blanditiis nobis inventore.</p>
+    <p>Molestias impedit ut reiciendis sit non vitae architecto facilis,</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quae nemo. Reprehenderit id dolorem aut quas ea soluta quos cupiditate, distinctio, accusamus earum qui repellat inventore fuga. Suscipit, magni sequi?</p>
     </div>
   </section>
 
   </main>
 
-  <section id="contact">
+  <!-- Contact -->
+  <section id="contact" class="contact">
     <h2>Contact</h2>
     <form>
-      <input type="text" placeholder="Votre nom" />
-      <input type="email" placeholder="Votre email" />
+      <label for="name">Nom</label>
+      <input type="text" placeholder="Votre nom">
+      <label for="email">Email</label>
+      <input type="email" placeholder="Votre email">
+      <label for="text">Message</label>
       <textarea placeholder="Votre message"></textarea>
       <button type="submit">Envoyer</button>
     </form>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Sean – Tous droits réservés</p>
   </footer>
