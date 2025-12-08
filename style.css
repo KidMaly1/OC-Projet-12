@@ -79,7 +79,7 @@ nav a:hover {
   height: 90vh;
   color: #1a1a1a; 
   text-align: center;
-  background-image: url('assets/background2.webp'); 
+  background-image: url('assets/Background-hero.webp'); 
   background-size: cover;
   
 }
@@ -258,6 +258,10 @@ nav a:hover {
   background: #ffbe0b;
   color: #1d3557;
   transform: scale(1.05);
+}
+
+.project-card h3, p {
+  padding-left: 1rem;
 }
 
 .path {
