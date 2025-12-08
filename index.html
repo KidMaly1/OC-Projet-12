@@ -10,8 +10,10 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="logo">Sean 💻✈️🏝️</div>
-    <nav>
+    <div class="logo">
+      <img src="assets/Tlogo.png" class="profile-logo" alt="Profile logo">
+    </div>
+    <nav id="nav">
       <ul>
         <li><a href="#hero">Accueil</a></li>
         <li><a href="#about">À propos</a></li>
@@ -19,13 +21,21 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <button class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  
+
   </header>
 
   <main>
   <!-- Hero -->
   <section id="hero" class="hero">
       <div class="hero-content">
-        <h1>Bonjour, je suis Sean 👨‍✈️</h1>
+        <h1>Bonjour, je suis Andria 👋💻</h1>
         <p>Développeur Web passionné, créatif et sensible à l’expérience utilisateur.</p>
         <div class="hero-buttons">
           <a href="#projects" class="btn-primary">Voir mes projets</a>
@@ -39,7 +49,7 @@
   <section id="about" class="about">
     <div class="about-text">
       <h2>À propos</h2>
-      <p>J’ai toujours été attiré par l’informatique et le design, sans savoir exactement dans quel domaine je pourrais évoluer ou m’épanouir...</p>
+      <p>J’ai toujours été attiré par l’informatique et le design, sans savoir exactement <br>dans quel domaine je pourrais évoluer ou m’épanouir...</p>
       <p>Au fil de mes recherches, j’ai découvert le métier de Développeur Web Front-end...</p>
       <p>Aujourd’hui, je me définis comme un développeur sensible à l’expérience utilisateur...</p>
     </div>
@@ -50,15 +60,26 @@
   </section>
 
   <div class="tech">
-      <h2>Les Technologies que j'utilise</h2>
+      <h2>Les Technologies que j'utilise :</h2>
       <div class="tech-logos">
-        <img src="assets/logo-html.png" alt="HTML">
-        <img src="assets/logo-css.png" alt="CSS">
-        <img src="assets/image7.png" alt="JavaScript">
-        <img src="assets/image8.png" alt="React">
+
+        <div class="tech-card">
+          <img src="assets/logo-html.png" alt="HTML">
+        </div>
+        <div class="tech-card">
+          <img src="assets/logo-css.png" alt="CSS">
+        </div>
+        <div class="tech-card">
+          <img src="assets/image7.png" alt="JavaScript">
+        </div>
+        <div class="tech-card">
+          <img src="assets/image8.png" alt="React">
+        </div>
+
       </div>
     </div>
 
+ 
   <!-- Projects -->
   <section id="projects" class="projects">
     <h2>Mes Projets</h2>
@@ -72,18 +93,25 @@
       <article class="project-card">
         <img src="assets/image3.png" alt="Projet 2">
         <h3>Portfolio de Photographe</h3>
-        <p>Portfolio d'une Photographe à Bordeaux SEO.</p>
-        <a href="#">Voir le projet</a>
+        <p>Portfolio d'une Photographe à Bordeaux SEO. Lorem ipsum dolor. Lfclr leojiio</p>
+        <a href="https://kidmaly1.github.io/OC-Projet-9/">Voir le projet</a>
+      </article>
+      <article class="project-card">
+        <img src="assets/imageJS.png" alt="Projet 3">
+        <h3>Print It JavaScript</h3>
+        <p>Premier projet en JavaScript. Faire fonctionner un Carrousel, découvrir la logique</p>
+        <a href="https://kidmaly1.github.io/OC-Projet-5/">Voir le projet</a>
       </article>
     </div>
   </section>
 
+ 
   <section id="path" class="path">
     <div class="path-text">
     <h2>Mon parcours</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  iste fugiat placeat, maxime fugit? Reiciendis quas nostrum ut porro blanditiis nobis inventore.</p>
-    <p>Molestias impedit ut reiciendis sit non vitae architecto facilis,</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quae nemo. Reprehenderit id dolorem aut quas ea soluta quos cupiditate, distinctio, accusamus earum qui repellat inventore fuga. Suscipit, magni sequi?</p>
+    <p>« Après mon baccalauréat, j’ai exploré différents domaines comme le Droit et l’Économie, puis travaillé dans plusieurs emplois. </p>
+    <p>Ces expériences m’ont permis de mieux comprendre mes aspirations et de réaliser que je cherchais un métier qui allie créativité et technique.</p>
+    <p>C’est ainsi que j’ai découvert le développement web, et que j’ai choisi de suivre la formation OpenClassrooms. Aujourd’hui, je suis épanoui dans cette voie. »</p>
     </div>
   </section>
 
@@ -105,7 +133,18 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Sean – Tous droits réservés</p>
+    <p>© 2025 AR – Tous droits réservés</p>
+    <img src="assets/Tlogo.png" class="profile-logo" alt="Profile logo">
   </footer>
 </body>
+
+<script>
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
 </html>
