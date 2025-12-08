@@ -181,21 +181,46 @@ nav a:hover {
   gap: 1rem;
 }
 
-.tech-card {
-  width: 150px;
-  height: 150px;
-  background-color: #f7f9fc;
-  border-radius: 50%;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #1a1a1a;
-}
 
 .tech-logos img {
   width: 60px;
   margin: 0.5rem;
+}
+
+.tech-card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f7f9fc;
+  border: 1px solid #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-image 0.3s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.tech-card:hover {
+  transform: scale(1.05);
+}
+
+.tech-name {
+  position: absolute;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tech-card:hover .tech-name {
+  opacity: 1;
 }
 
 /* Projects */
@@ -282,12 +307,8 @@ nav a:hover {
   font-size: 2.4rem;
 }
 
-/* Contact */
-.contact {
-  padding: 3rem 2rem;
-  text-align: center;
-  
-}
+/* Contact 
+
 
 form {
   display: flex;
@@ -322,6 +343,29 @@ form button:hover {
   background: #ffbe0b;
   color: #1d3557;
   transform: scale(1.05);
+} */
+
+
+.contact {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contact-section {
+  padding: 2rem;
+  background-color: #f7f9fc;
+  border-top: 2px solid #1a1a1a;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  margin-bottom: 1.5rem;
+  color: #333;
 }
 
 /* Footer */
