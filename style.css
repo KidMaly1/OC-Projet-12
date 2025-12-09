@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -17,7 +21,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  
+  position: relative;
+  overflow-x: hidden; 
 }
 
 .profile-logo {
@@ -362,7 +367,8 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
-    width: 200px;
+    width: 100%;
+    max-width: 300px;    
     height: 100vh;
     background-color: #343637;
     opacity: 0;
